@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+        <!--FIELDSET-->
+        <fieldset style="height: 11cm; width: 11.6cm; position: relative; left: 30%; top: 1cm; background-color: rgba(0, 0, 0, 0.804);">
+
+        
+       <!--DISPLAY BAR-->
+        <input type="text" id="frame" style="width: 10.6cm; height: 1.5cm; position: relative; left: 15px; top: 30px; background-color: rgb(116, 114, 114); border: 2px solid black; text-align: right;font-size: 50px;"></input>
+            
+            
+            
+            <!--FIRST ROW-->
+            <input type="button" id = "btn_sqroot" value="√" style="width: 1.5cm; height: 1.5cm; position: relative; left: 15px; top: 60px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_sqroot()">
+            <input type="button" id = "btn_power" value="^" style="width: 1.5cm; height: 1.5cm; position: relative; left: 25px; top: 60px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_power()">
+            <input type="button" id = "btn_point" value="." style="width: 1.5cm; height: 1.5cm; position: relative; left: 35px; top: 60px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_point()">
+            <input type="button" id = "btn_DE" value="DE" style="width: 1.5cm; height: 1.5cm; position: relative; left: 115px; top: 60px; font-size: 30px; background-color: rgba(225, 24, 24, 0.804); color: aliceblue;" onclick="button_DE()">
+            <input type="button" id = "btn_AC" value="AC" style="width: 1.5cm; height: 1.5cm; position: relative; left: 125px; top: 60px; font-size: 30px; background-color: rgba(225, 24, 24, 0.804); color: aliceblue;" onclick="button_AC()">
+            <input type="button" id = "btn_square" value="x²" style="width: 1.5cm; height: 1.5cm; position: relative; left: -75px; top: 60px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_square()">
+            
+            <br>
+            
+            <!--SECOND ROW-->
+            <input type="button" id = "btn_9" value="9" style="width: 1.5cm; height: 1.5cm; position: relative; left: 15px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_9()">
+            <input type="button" id = "btn_8" value="8" style="width: 1.5cm; height: 1.5cm; position: relative; left: 25px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_8()">
+            <input type="button" id = "btn_7" value="7" style="width: 1.5cm; height: 1.5cm; position: relative; left: 35px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_7()">
+            <input type="button" id = "btn_x" value="x" style="width: 1.5cm; height: 1.5cm; position: relative; left: 115px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_x()">
+            <input type="button" id = "btn_/" value="/" style="width: 1.5cm; height: 1.5cm; position: relative; left: 125px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_div()">
+            <input type="button" id = "btn_cube" value="x3" style="width: 1.5cm; height: 1.5cm; position: relative; left: -75px; top: 70px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_cube()">
+            
+            <br>
+            
+            <!--THIRD ROW-->
+            <input type="button" id = "btn_4" value="4" style="width: 1.5cm; height: 1.5cm; position: relative; left: 15px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_4()">
+            <input type="button" id = "btn_5" value="5" style="width: 1.5cm; height: 1.5cm; position: relative; left: 25px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_5()">
+            <input type="button" id = "btn_5" value="6" style="width: 1.5cm; height: 1.5cm; position: relative; left: 35px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_6()">
+            <input type="button" id = "btn_add" value="+" style="width: 1.5cm; height: 1.5cm; position: relative; left: 115px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_add()">
+            <input type="button" id = "btn_sub" value="-" style="width: 1.5cm; height: 1.5cm; position: relative; left: 125px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_sub()">
+            <input type="button" id = "btn_factorial" value="x!" style="width: 1.5cm; height: 1.5cm; position: relative; left: -75px; top: 80px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_factorial()">
+            
+            <br>
+            
+            <!--FOURTH ROW-->
+            <input type="button" id = "btn_1" value="1" style="width: 1.5cm; height: 1.5cm; position: relative; left: 15px; top: 90px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_1()">
+            <input type="button" id = "btn_2" value="2" style="width: 1.5cm; height: 1.5cm; position: relative; left: 25px; top: 90px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_2()">
+            <input type="button" id = "btn_3" value="3" style="width: 1.5cm; height: 1.5cm; position: relative; left: 35px; top: 90px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_3()">
+            <input type="button" id = "btn_0" value="0" style="width: 1.5cm; height: 1.5cm; position: relative; left: 45px; top: 90px; font-size: 30px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_0()">
+            <input type="button" id = "btn_equal" value="=" style="width: 1.5cm; height: 1.5cm; position: relative; left: 125px; top: 90px; font-size: 30px; background-color: rgba(3, 120, 32, 0.804); color: aliceblue;" onclick="button_equal()">
+            <input type="button" id = "btn_ans" value="Ans" style="width: 1.5cm; height: 1.5cm; position: relative; left: -5px; top: 88px; font-size: 25px; background-color: rgba(83, 83, 83, 0.804); color: aliceblue;" onclick="button_ans()">
+            
+            
+        </fieldset>
+    <script src="function.js"></script>
+</body>
+</html>
